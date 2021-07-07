@@ -1,0 +1,670 @@
+2021-07-07 09:43:04.609406 (MainThread): Running with dbt=0.18.1
+2021-07-07 09:43:04.754011 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.compile.CompileTask'>, debug=False, defer=None, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, parse_only=False, partial_parse=None, profile=None, profiles_dir='/Users/davidkane/.dbt', project_dir=None, record_timing_info=None, rpc_method='compile', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='compile', write_json=True)
+2021-07-07 09:43:04.754669 (MainThread): Tracking: tracking
+2021-07-07 09:43:04.775703 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1e1097b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1e1097f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1e1097b90>]}
+2021-07-07 09:43:04.809348 (MainThread): Partial parsing not enabled
+2021-07-07 09:43:04.810685 (MainThread): Parsing macros/catalog.sql
+2021-07-07 09:43:04.841547 (MainThread): Parsing macros/relations.sql
+2021-07-07 09:43:04.842683 (MainThread): Parsing macros/adapters.sql
+2021-07-07 09:43:04.871539 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-07-07 09:43:04.881182 (MainThread): Parsing macros/catalog.sql
+2021-07-07 09:43:04.884200 (MainThread): Parsing macros/relations.sql
+2021-07-07 09:43:04.886028 (MainThread): Parsing macros/adapters.sql
+2021-07-07 09:43:04.907601 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-07-07 09:43:04.913131 (MainThread): Parsing macros/core.sql
+2021-07-07 09:43:04.917421 (MainThread): Parsing macros/materializations/helpers.sql
+2021-07-07 09:43:04.927434 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-07-07 09:43:04.929621 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-07-07 09:43:04.956219 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-07-07 09:43:04.988788 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-07-07 09:43:05.010964 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-07-07 09:43:05.013327 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-07-07 09:43:05.020802 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-07-07 09:43:05.035499 (MainThread): Parsing macros/materializations/table/table.sql
+2021-07-07 09:43:05.042837 (MainThread): Parsing macros/materializations/view/view.sql
+2021-07-07 09:43:05.049843 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-07-07 09:43:05.055479 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-07-07 09:43:05.056909 (MainThread): Parsing macros/etc/query.sql
+2021-07-07 09:43:05.058450 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-07-07 09:43:05.060735 (MainThread): Parsing macros/etc/datetime.sql
+2021-07-07 09:43:05.070047 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-07-07 09:43:05.072453 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-07-07 09:43:05.074585 (MainThread): Parsing macros/adapters/common.sql
+2021-07-07 09:43:05.122970 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-07-07 09:43:05.125468 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-07-07 09:43:05.127508 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-07-07 09:43:05.129639 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-07-07 09:43:05.137991 (MainThread): Partial parsing not enabled
+2021-07-07 09:43:05.173381 (MainThread): Acquiring new redshift connection "model.Paddle.my_first_dbt_model".
+2021-07-07 09:43:05.192004 (MainThread): Acquiring new redshift connection "model.Paddle.my_second_dbt_model".
+2021-07-07 09:43:05.432589 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2021-07-07 09:43:05.472594 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 163 macros, 0 operations, 0 seed files, 0 sources
+2021-07-07 09:43:05.473591 (MainThread): 
+2021-07-07 09:43:05.474394 (MainThread): Acquiring new redshift connection "master".
+2021-07-07 09:43:05.481487 (ThreadPoolExecutor-0_0): Acquiring new redshift connection "list_site_20583_site_20583".
+2021-07-07 09:43:05.494235 (ThreadPoolExecutor-0_0): Using redshift connection "list_site_20583_site_20583".
+2021-07-07 09:43:05.494371 (ThreadPoolExecutor-0_0): On list_site_20583_site_20583: BEGIN
+2021-07-07 09:43:05.494451 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-07-07 09:43:05.494517 (ThreadPoolExecutor-0_0): Connecting to Redshift using 'database' credentials
+2021-07-07 09:43:05.763793 (ThreadPoolExecutor-0_0): Got an error when attempting to open a postgres connection: 'FATAL:  password authentication failed for user "paddlepaddledev"
+FATAL:  no pg_hba.conf entry for host "::ffff:167.98.18.4", user "paddlepaddledev", database "site_20583", SSL off
+'
+2021-07-07 09:43:05.763962 (ThreadPoolExecutor-0_0): Error running SQL: BEGIN
+2021-07-07 09:43:05.764041 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2021-07-07 09:43:05.764158 (ThreadPoolExecutor-0_0): Error running SQL: macro list_relations_without_caching
+2021-07-07 09:43:05.764225 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2021-07-07 09:43:05.764317 (ThreadPoolExecutor-0_0): On list_site_20583_site_20583: No close available on handle
+2021-07-07 09:43:05.765005 (MainThread): Connection 'master' was properly closed.
+2021-07-07 09:43:05.765099 (MainThread): Connection 'list_site_20583_site_20583' was properly closed.
+2021-07-07 09:43:05.765190 (MainThread): ERROR: Database Error
+  FATAL:  password authentication failed for user "paddlepaddledev"
+  FATAL:  no pg_hba.conf entry for host "::ffff:167.98.18.4", user "paddlepaddledev", database "site_20583", SSL off
+  
+2021-07-07 09:43:05.765339 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa21096f810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa21092f610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1f1618490>]}
+2021-07-07 09:43:05.765513 (MainThread): Flushing usage events
+2021-07-07 09:44:14.376567 (MainThread): Running with dbt=0.18.1
+2021-07-07 09:44:14.518738 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.compile.CompileTask'>, debug=False, defer=None, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, parse_only=False, partial_parse=None, profile=None, profiles_dir='/Users/davidkane/.dbt', project_dir=None, record_timing_info=None, rpc_method='compile', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='compile', write_json=True)
+2021-07-07 09:44:14.519132 (MainThread): Tracking: tracking
+2021-07-07 09:44:14.536911 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf30efe250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf30efeed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf30efef90>]}
+2021-07-07 09:44:14.565432 (MainThread): Partial parsing not enabled
+2021-07-07 09:44:14.566412 (MainThread): Parsing macros/catalog.sql
+2021-07-07 09:44:14.580974 (MainThread): Parsing macros/relations.sql
+2021-07-07 09:44:14.581612 (MainThread): Parsing macros/adapters.sql
+2021-07-07 09:44:14.609427 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-07-07 09:44:14.610438 (MainThread): Parsing macros/catalog.sql
+2021-07-07 09:44:14.612899 (MainThread): Parsing macros/relations.sql
+2021-07-07 09:44:14.614316 (MainThread): Parsing macros/adapters.sql
+2021-07-07 09:44:14.637529 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-07-07 09:44:14.640354 (MainThread): Parsing macros/core.sql
+2021-07-07 09:44:14.644265 (MainThread): Parsing macros/materializations/helpers.sql
+2021-07-07 09:44:14.654118 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-07-07 09:44:14.655960 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-07-07 09:44:14.672991 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-07-07 09:44:14.703471 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-07-07 09:44:14.724644 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-07-07 09:44:14.726562 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-07-07 09:44:14.732828 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-07-07 09:44:14.747868 (MainThread): Parsing macros/materializations/table/table.sql
+2021-07-07 09:44:14.756998 (MainThread): Parsing macros/materializations/view/view.sql
+2021-07-07 09:44:14.764352 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-07-07 09:44:14.769771 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-07-07 09:44:14.770737 (MainThread): Parsing macros/etc/query.sql
+2021-07-07 09:44:14.771794 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-07-07 09:44:14.773454 (MainThread): Parsing macros/etc/datetime.sql
+2021-07-07 09:44:14.783001 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-07-07 09:44:14.785027 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-07-07 09:44:14.786721 (MainThread): Parsing macros/adapters/common.sql
+2021-07-07 09:44:14.830949 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-07-07 09:44:14.832821 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-07-07 09:44:14.834318 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-07-07 09:44:14.836003 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-07-07 09:44:14.844099 (MainThread): Partial parsing not enabled
+2021-07-07 09:44:14.885780 (MainThread): Acquiring new redshift connection "model.Paddle.my_first_dbt_model".
+2021-07-07 09:44:14.905832 (MainThread): Acquiring new redshift connection "model.Paddle.my_second_dbt_model".
+2021-07-07 09:44:15.127329 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2021-07-07 09:44:15.174465 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 163 macros, 0 operations, 0 seed files, 0 sources
+2021-07-07 09:44:15.175153 (MainThread): 
+2021-07-07 09:44:15.175656 (MainThread): Acquiring new redshift connection "master".
+2021-07-07 09:44:15.183300 (ThreadPoolExecutor-0_0): Acquiring new redshift connection "list_site_20583_dev".
+2021-07-07 09:44:15.194109 (ThreadPoolExecutor-0_0): Using redshift connection "list_site_20583_dev".
+2021-07-07 09:44:15.194250 (ThreadPoolExecutor-0_0): On list_site_20583_dev: BEGIN
+2021-07-07 09:44:15.194339 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-07-07 09:44:15.194409 (ThreadPoolExecutor-0_0): Connecting to Redshift using 'database' credentials
+2021-07-07 09:44:15.363377 (ThreadPoolExecutor-0_0): Got an error when attempting to open a postgres connection: 'FATAL:  password authentication failed for user "paddlepaddledev"
+FATAL:  no pg_hba.conf entry for host "::ffff:167.98.18.4", user "paddlepaddledev", database "site_20583", SSL off
+'
+2021-07-07 09:44:15.363556 (ThreadPoolExecutor-0_0): Error running SQL: BEGIN
+2021-07-07 09:44:15.363653 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2021-07-07 09:44:15.363795 (ThreadPoolExecutor-0_0): Error running SQL: macro list_relations_without_caching
+2021-07-07 09:44:15.363874 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2021-07-07 09:44:15.363961 (ThreadPoolExecutor-0_0): On list_site_20583_dev: No close available on handle
+2021-07-07 09:44:15.364729 (MainThread): Connection 'master' was properly closed.
+2021-07-07 09:44:15.364831 (MainThread): Connection 'list_site_20583_dev' was properly closed.
+2021-07-07 09:44:15.364932 (MainThread): ERROR: Database Error
+  FATAL:  password authentication failed for user "paddlepaddledev"
+  FATAL:  no pg_hba.conf entry for host "::ffff:167.98.18.4", user "paddlepaddledev", database "site_20583", SSL off
+  
+2021-07-07 09:44:15.365092 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf20b34850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf30c93290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf41322890>]}
+2021-07-07 09:44:15.365291 (MainThread): Flushing usage events
+2021-07-07 09:44:19.846180 (MainThread): Running with dbt=0.18.1
+2021-07-07 09:44:20.004491 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/davidkane/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-07-07 09:44:20.004885 (MainThread): Tracking: tracking
+2021-07-07 09:44:20.023734 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe6f8cb25d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe6f8a55c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe6f8cb6090>]}
+2021-07-07 09:44:20.051816 (MainThread): Partial parsing not enabled
+2021-07-07 09:44:20.052844 (MainThread): Parsing macros/catalog.sql
+2021-07-07 09:44:20.067205 (MainThread): Parsing macros/relations.sql
+2021-07-07 09:44:20.067827 (MainThread): Parsing macros/adapters.sql
+2021-07-07 09:44:20.096339 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-07-07 09:44:20.097322 (MainThread): Parsing macros/catalog.sql
+2021-07-07 09:44:20.099731 (MainThread): Parsing macros/relations.sql
+2021-07-07 09:44:20.101130 (MainThread): Parsing macros/adapters.sql
+2021-07-07 09:44:20.123032 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-07-07 09:44:20.126300 (MainThread): Parsing macros/core.sql
+2021-07-07 09:44:20.130061 (MainThread): Parsing macros/materializations/helpers.sql
+2021-07-07 09:44:20.139489 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-07-07 09:44:20.141210 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-07-07 09:44:20.157853 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-07-07 09:44:20.190155 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-07-07 09:44:20.213633 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-07-07 09:44:20.215749 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-07-07 09:44:20.222294 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-07-07 09:44:20.238240 (MainThread): Parsing macros/materializations/table/table.sql
+2021-07-07 09:44:20.246185 (MainThread): Parsing macros/materializations/view/view.sql
+2021-07-07 09:44:20.252991 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-07-07 09:44:20.258877 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-07-07 09:44:20.259916 (MainThread): Parsing macros/etc/query.sql
+2021-07-07 09:44:20.260975 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-07-07 09:44:20.262685 (MainThread): Parsing macros/etc/datetime.sql
+2021-07-07 09:44:20.272625 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-07-07 09:44:20.274871 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-07-07 09:44:20.276595 (MainThread): Parsing macros/adapters/common.sql
+2021-07-07 09:44:20.324076 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-07-07 09:44:20.326225 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-07-07 09:44:20.327968 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-07-07 09:44:20.329717 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-07-07 09:44:20.338559 (MainThread): Partial parsing not enabled
+2021-07-07 09:44:20.376612 (MainThread): Acquiring new redshift connection "model.Paddle.my_first_dbt_model".
+2021-07-07 09:44:20.397342 (MainThread): Acquiring new redshift connection "model.Paddle.my_second_dbt_model".
+2021-07-07 09:44:20.636979 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2021-07-07 09:44:20.677999 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 163 macros, 0 operations, 0 seed files, 0 sources
+2021-07-07 09:44:20.678798 (MainThread): 
+2021-07-07 09:44:20.679198 (MainThread): Acquiring new redshift connection "master".
+2021-07-07 09:44:20.681776 (ThreadPoolExecutor-0_0): Acquiring new redshift connection "list_site_20583".
+2021-07-07 09:44:20.693475 (ThreadPoolExecutor-0_0): Using redshift connection "list_site_20583".
+2021-07-07 09:44:20.693613 (ThreadPoolExecutor-0_0): On list_site_20583: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "paddle", "target_name": "dev", "connection_name": "list_site_20583"} */
+
+    select distinct nspname from pg_namespace
+  
+2021-07-07 09:44:20.693732 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-07-07 09:44:20.693802 (ThreadPoolExecutor-0_0): Connecting to Redshift using 'database' credentials
+2021-07-07 09:44:20.958096 (ThreadPoolExecutor-0_0): Got an error when attempting to open a postgres connection: 'FATAL:  password authentication failed for user "paddlepaddledev"
+FATAL:  no pg_hba.conf entry for host "::ffff:167.98.18.4", user "paddlepaddledev", database "site_20583", SSL off
+'
+2021-07-07 09:44:20.958270 (ThreadPoolExecutor-0_0): Error running SQL: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "paddle", "target_name": "dev", "connection_name": "list_site_20583"} */
+
+    select distinct nspname from pg_namespace
+  
+2021-07-07 09:44:20.958347 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2021-07-07 09:44:20.958467 (ThreadPoolExecutor-0_0): Error running SQL: macro list_schemas
+2021-07-07 09:44:20.958537 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2021-07-07 09:44:20.958629 (ThreadPoolExecutor-0_0): On list_site_20583: No close available on handle
+2021-07-07 09:44:20.959345 (MainThread): Connection 'master' was properly closed.
+2021-07-07 09:44:20.959433 (MainThread): Connection 'list_site_20583' was properly closed.
+2021-07-07 09:44:20.959522 (MainThread): ERROR: Database Error
+  FATAL:  password authentication failed for user "paddlepaddledev"
+  FATAL:  no pg_hba.conf entry for host "::ffff:167.98.18.4", user "paddlepaddledev", database "site_20583", SSL off
+  
+2021-07-07 09:44:20.959668 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe6d8e628d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe6e95f02d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe6d9158c90>]}
+2021-07-07 09:44:20.959863 (MainThread): Flushing usage events
+2021-07-07 09:56:54.385556 (MainThread): Running with dbt=0.18.1
+2021-07-07 09:56:54.529602 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/davidkane/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-07-07 09:56:54.530023 (MainThread): Tracking: tracking
+2021-07-07 09:56:54.546628 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa980b96090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa980b96c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa980b96ad0>]}
+2021-07-07 09:56:54.578911 (MainThread): Partial parsing not enabled
+2021-07-07 09:56:54.580129 (MainThread): Parsing macros/catalog.sql
+2021-07-07 09:56:54.595721 (MainThread): Parsing macros/relations.sql
+2021-07-07 09:56:54.596409 (MainThread): Parsing macros/adapters.sql
+2021-07-07 09:56:54.625438 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-07-07 09:56:54.626417 (MainThread): Parsing macros/catalog.sql
+2021-07-07 09:56:54.629027 (MainThread): Parsing macros/relations.sql
+2021-07-07 09:56:54.630500 (MainThread): Parsing macros/adapters.sql
+2021-07-07 09:56:54.652573 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-07-07 09:56:54.655359 (MainThread): Parsing macros/core.sql
+2021-07-07 09:56:54.659404 (MainThread): Parsing macros/materializations/helpers.sql
+2021-07-07 09:56:54.669947 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-07-07 09:56:54.671888 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-07-07 09:56:54.688972 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-07-07 09:56:54.719845 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-07-07 09:56:54.741367 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-07-07 09:56:54.743421 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-07-07 09:56:54.750246 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-07-07 09:56:54.765057 (MainThread): Parsing macros/materializations/table/table.sql
+2021-07-07 09:56:54.772676 (MainThread): Parsing macros/materializations/view/view.sql
+2021-07-07 09:56:54.779392 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-07-07 09:56:54.785017 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-07-07 09:56:54.786010 (MainThread): Parsing macros/etc/query.sql
+2021-07-07 09:56:54.787078 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-07-07 09:56:54.788735 (MainThread): Parsing macros/etc/datetime.sql
+2021-07-07 09:56:54.797920 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-07-07 09:56:54.799874 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-07-07 09:56:54.801530 (MainThread): Parsing macros/adapters/common.sql
+2021-07-07 09:56:54.848458 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-07-07 09:56:54.850496 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-07-07 09:56:54.852063 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-07-07 09:56:54.853760 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-07-07 09:56:54.861909 (MainThread): Partial parsing not enabled
+2021-07-07 09:56:54.898583 (MainThread): Acquiring new redshift connection "model.Paddle.my_first_dbt_model".
+2021-07-07 09:56:54.919251 (MainThread): Acquiring new redshift connection "model.Paddle.my_second_dbt_model".
+2021-07-07 09:56:55.145529 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2021-07-07 09:56:55.185483 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 163 macros, 0 operations, 0 seed files, 0 sources
+2021-07-07 09:56:55.186181 (MainThread): 
+2021-07-07 09:56:55.186611 (MainThread): Acquiring new redshift connection "master".
+2021-07-07 09:56:55.189043 (ThreadPoolExecutor-0_0): Acquiring new redshift connection "list_site_20583".
+2021-07-07 09:56:55.200430 (ThreadPoolExecutor-0_0): Using redshift connection "list_site_20583".
+2021-07-07 09:56:55.200574 (ThreadPoolExecutor-0_0): On list_site_20583: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "paddle", "target_name": "dev", "connection_name": "list_site_20583"} */
+
+    select distinct nspname from pg_namespace
+  
+2021-07-07 09:56:55.200656 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-07-07 09:56:55.200722 (ThreadPoolExecutor-0_0): Connecting to Redshift using 'database' credentials
+2021-07-07 09:56:55.494567 (ThreadPoolExecutor-0_0): Got an error when attempting to open a postgres connection: 'FATAL:  password authentication failed for user "paddlepaddledev"
+FATAL:  no pg_hba.conf entry for host "::ffff:167.98.18.4", user "paddlepaddledev", database "site_20583", SSL off
+'
+2021-07-07 09:56:55.494734 (ThreadPoolExecutor-0_0): Error running SQL: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "paddle", "target_name": "dev", "connection_name": "list_site_20583"} */
+
+    select distinct nspname from pg_namespace
+  
+2021-07-07 09:56:55.494808 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2021-07-07 09:56:55.494921 (ThreadPoolExecutor-0_0): Error running SQL: macro list_schemas
+2021-07-07 09:56:55.494985 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2021-07-07 09:56:55.495076 (ThreadPoolExecutor-0_0): On list_site_20583: No close available on handle
+2021-07-07 09:56:55.495864 (MainThread): Connection 'master' was properly closed.
+2021-07-07 09:56:55.495951 (MainThread): Connection 'list_site_20583' was properly closed.
+2021-07-07 09:56:55.496040 (MainThread): ERROR: Database Error
+  FATAL:  password authentication failed for user "paddlepaddledev"
+  FATAL:  no pg_hba.conf entry for host "::ffff:167.98.18.4", user "paddlepaddledev", database "site_20583", SSL off
+  
+2021-07-07 09:56:55.496219 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa960d71f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa99122e590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa99122e4d0>]}
+2021-07-07 09:56:55.496496 (MainThread): Flushing usage events
+2021-07-07 09:57:27.607062 (MainThread): Running with dbt=0.18.1
+2021-07-07 09:57:27.749664 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/davidkane/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-07-07 09:57:27.750059 (MainThread): Tracking: tracking
+2021-07-07 09:57:27.770672 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe008b5be50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdff8572550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe008b5f3d0>]}
+2021-07-07 09:57:27.799561 (MainThread): Partial parsing not enabled
+2021-07-07 09:57:27.800721 (MainThread): Parsing macros/catalog.sql
+2021-07-07 09:57:27.815527 (MainThread): Parsing macros/relations.sql
+2021-07-07 09:57:27.816214 (MainThread): Parsing macros/adapters.sql
+2021-07-07 09:57:27.844629 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-07-07 09:57:27.845705 (MainThread): Parsing macros/catalog.sql
+2021-07-07 09:57:27.848038 (MainThread): Parsing macros/relations.sql
+2021-07-07 09:57:27.849444 (MainThread): Parsing macros/adapters.sql
+2021-07-07 09:57:27.871662 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2021-07-07 09:57:27.874565 (MainThread): Parsing macros/core.sql
+2021-07-07 09:57:27.878400 (MainThread): Parsing macros/materializations/helpers.sql
+2021-07-07 09:57:27.888189 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-07-07 09:57:27.890043 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-07-07 09:57:27.907201 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-07-07 09:57:27.938018 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-07-07 09:57:27.960695 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-07-07 09:57:27.962592 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-07-07 09:57:27.969111 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-07-07 09:57:27.983884 (MainThread): Parsing macros/materializations/table/table.sql
+2021-07-07 09:57:27.991641 (MainThread): Parsing macros/materializations/view/view.sql
+2021-07-07 09:57:27.998318 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-07-07 09:57:28.003607 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-07-07 09:57:28.004547 (MainThread): Parsing macros/etc/query.sql
+2021-07-07 09:57:28.005636 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-07-07 09:57:28.007247 (MainThread): Parsing macros/etc/datetime.sql
+2021-07-07 09:57:28.016526 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-07-07 09:57:28.018492 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-07-07 09:57:28.020152 (MainThread): Parsing macros/adapters/common.sql
+2021-07-07 09:57:28.065187 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-07-07 09:57:28.067233 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-07-07 09:57:28.068758 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-07-07 09:57:28.070568 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-07-07 09:57:28.078913 (MainThread): Partial parsing not enabled
+2021-07-07 09:57:28.115093 (MainThread): Acquiring new redshift connection "model.Paddle.my_first_dbt_model".
+2021-07-07 09:57:28.134060 (MainThread): Acquiring new redshift connection "model.Paddle.my_second_dbt_model".
+2021-07-07 09:57:28.365177 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2021-07-07 09:57:28.404311 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 163 macros, 0 operations, 0 seed files, 0 sources
+2021-07-07 09:57:28.405032 (MainThread): 
+2021-07-07 09:57:28.405619 (MainThread): Acquiring new redshift connection "master".
+2021-07-07 09:57:28.408159 (ThreadPoolExecutor-0_0): Acquiring new redshift connection "list_site_20583".
+2021-07-07 09:57:28.419126 (ThreadPoolExecutor-0_0): Using redshift connection "list_site_20583".
+2021-07-07 09:57:28.419271 (ThreadPoolExecutor-0_0): On list_site_20583: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "paddle", "target_name": "dev", "connection_name": "list_site_20583"} */
+
+    select distinct nspname from pg_namespace
+  
+2021-07-07 09:57:28.419353 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-07-07 09:57:28.419420 (ThreadPoolExecutor-0_0): Connecting to Redshift using 'database' credentials
+2021-07-07 09:57:28.609573 (ThreadPoolExecutor-0_0): SQL status: SELECT in 0.19 seconds
+2021-07-07 09:57:28.638942 (ThreadPoolExecutor-0_0): On list_site_20583: Close
+2021-07-07 09:57:28.639959 (ThreadPoolExecutor-0_0): Acquiring new redshift connection "create_site_20583_dbt_dczekalska".
+2021-07-07 09:57:28.640251 (ThreadPoolExecutor-0_0): Acquiring new redshift connection "create_site_20583_dbt_dczekalska".
+2021-07-07 09:57:28.640378 (ThreadPoolExecutor-0_0): Creating schema ""site_20583"."dbt_dczekalska""
+2021-07-07 09:57:28.646537 (ThreadPoolExecutor-0_0): Using redshift connection "create_site_20583_dbt_dczekalska".
+2021-07-07 09:57:28.646660 (ThreadPoolExecutor-0_0): On create_site_20583_dbt_dczekalska: BEGIN
+2021-07-07 09:57:28.646736 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state closed
+2021-07-07 09:57:28.646801 (ThreadPoolExecutor-0_0): Connecting to Redshift using 'database' credentials
+2021-07-07 09:57:28.931811 (ThreadPoolExecutor-0_0): SQL status: BEGIN in 0.29 seconds
+2021-07-07 09:57:28.931984 (ThreadPoolExecutor-0_0): Using redshift connection "create_site_20583_dbt_dczekalska".
+2021-07-07 09:57:28.932068 (ThreadPoolExecutor-0_0): On create_site_20583_dbt_dczekalska: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "paddle", "target_name": "dev", "connection_name": "create_site_20583_dbt_dczekalska"} */
+create schema if not exists "dbt_dczekalska"
+2021-07-07 09:57:28.959282 (ThreadPoolExecutor-0_0): SQL status: CREATE SCHEMA in 0.03 seconds
+2021-07-07 09:57:28.960166 (ThreadPoolExecutor-0_0): On create_site_20583_dbt_dczekalska: COMMIT
+2021-07-07 09:57:28.960258 (ThreadPoolExecutor-0_0): Using redshift connection "create_site_20583_dbt_dczekalska".
+2021-07-07 09:57:28.960329 (ThreadPoolExecutor-0_0): On create_site_20583_dbt_dczekalska: COMMIT
+2021-07-07 09:57:29.335722 (ThreadPoolExecutor-0_0): SQL status: COMMIT in 0.38 seconds
+2021-07-07 09:57:29.335940 (ThreadPoolExecutor-0_0): On create_site_20583_dbt_dczekalska: Close
+2021-07-07 09:57:29.343570 (ThreadPoolExecutor-1_0): Acquiring new redshift connection "list_site_20583_dbt_dczekalska".
+2021-07-07 09:57:29.351276 (ThreadPoolExecutor-1_0): Using redshift connection "list_site_20583_dbt_dczekalska".
+2021-07-07 09:57:29.351465 (ThreadPoolExecutor-1_0): On list_site_20583_dbt_dczekalska: BEGIN
+2021-07-07 09:57:29.351577 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-07-07 09:57:29.351645 (ThreadPoolExecutor-1_0): Connecting to Redshift using 'database' credentials
+2021-07-07 09:57:29.556990 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.21 seconds
+2021-07-07 09:57:29.557159 (ThreadPoolExecutor-1_0): Using redshift connection "list_site_20583_dbt_dczekalska".
+2021-07-07 09:57:29.557241 (ThreadPoolExecutor-1_0): On list_site_20583_dbt_dczekalska: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "paddle", "target_name": "dev", "connection_name": "list_site_20583_dbt_dczekalska"} */
+select
+      'site_20583' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt_dczekalska'
+    union all
+    select
+      'site_20583' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt_dczekalska'
+  
+2021-07-07 09:57:29.600595 (ThreadPoolExecutor-1_0): SQL status: SELECT in 0.04 seconds
+2021-07-07 09:57:29.600951 (ThreadPoolExecutor-1_0): On list_site_20583_dbt_dczekalska: ROLLBACK
+2021-07-07 09:57:29.622143 (ThreadPoolExecutor-1_0): On list_site_20583_dbt_dczekalska: Close
+2021-07-07 09:57:29.632408 (MainThread): Using redshift connection "master".
+2021-07-07 09:57:29.632540 (MainThread): On master: BEGIN
+2021-07-07 09:57:29.632618 (MainThread): Opening a new connection, currently in state init
+2021-07-07 09:57:29.632682 (MainThread): Connecting to Redshift using 'database' credentials
+2021-07-07 09:57:29.821768 (MainThread): SQL status: BEGIN in 0.19 seconds
+2021-07-07 09:57:29.821938 (MainThread): Using redshift connection "master".
+2021-07-07 09:57:29.822020 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "paddle", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2021-07-07 09:57:29.910766 (MainThread): SQL status: SELECT in 0.09 seconds
+2021-07-07 09:57:29.911112 (MainThread): On master: ROLLBACK
+2021-07-07 09:57:29.931230 (MainThread): Using redshift connection "master".
+2021-07-07 09:57:29.931345 (MainThread): On master: BEGIN
+2021-07-07 09:57:29.968648 (MainThread): SQL status: BEGIN in 0.04 seconds
+2021-07-07 09:57:29.968802 (MainThread): On master: COMMIT
+2021-07-07 09:57:29.968887 (MainThread): Using redshift connection "master".
+2021-07-07 09:57:29.968961 (MainThread): On master: COMMIT
+2021-07-07 09:57:29.994886 (MainThread): SQL status: COMMIT in 0.03 seconds
+2021-07-07 09:57:29.995036 (MainThread): On master: Close
+2021-07-07 09:57:29.995640 (MainThread): 10:57:29 | Concurrency: 1 threads (target='dev')
+2021-07-07 09:57:29.995788 (MainThread): 10:57:29 | 
+2021-07-07 09:57:29.998890 (Thread-1): Began running node model.Paddle.my_first_dbt_model
+2021-07-07 09:57:29.999982 (Thread-1): 10:57:29 | 1 of 2 START table model dbt_dczekalska.my_first_dbt_model........... [RUN]
+2021-07-07 09:57:30.000452 (Thread-1): Acquiring new redshift connection "model.Paddle.my_first_dbt_model".
+2021-07-07 09:57:30.000573 (Thread-1): Compiling model.Paddle.my_first_dbt_model
+2021-07-07 09:57:30.019097 (Thread-1): Writing injected SQL for node "model.Paddle.my_first_dbt_model"
+2021-07-07 09:57:30.019799 (Thread-1): finished collecting timing info
+2021-07-07 09:57:30.038908 (Thread-1): Using redshift connection "model.Paddle.my_first_dbt_model".
+2021-07-07 09:57:30.039208 (Thread-1): On model.Paddle.my_first_dbt_model: BEGIN
+2021-07-07 09:57:30.039356 (Thread-1): Opening a new connection, currently in state closed
+2021-07-07 09:57:30.039452 (Thread-1): Connecting to Redshift using 'database' credentials
+2021-07-07 09:57:30.218914 (Thread-1): SQL status: BEGIN in 0.18 seconds
+2021-07-07 09:57:30.224144 (Thread-1): Using redshift connection "model.Paddle.my_first_dbt_model".
+2021-07-07 09:57:30.224307 (Thread-1): On model.Paddle.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "paddle", "target_name": "dev", "node_id": "model.Paddle.my_first_dbt_model"} */
+drop table if exists "site_20583"."dbt_dczekalska"."my_first_dbt_model__dbt_tmp" cascade
+2021-07-07 09:57:30.244619 (Thread-1): SQL status: DROP TABLE in 0.02 seconds
+2021-07-07 09:57:30.245487 (Thread-1): On model.Paddle.my_first_dbt_model: COMMIT
+2021-07-07 09:57:30.245583 (Thread-1): Using redshift connection "model.Paddle.my_first_dbt_model".
+2021-07-07 09:57:30.245657 (Thread-1): On model.Paddle.my_first_dbt_model: COMMIT
+2021-07-07 09:57:30.268760 (Thread-1): SQL status: COMMIT in 0.02 seconds
+2021-07-07 09:57:30.268956 (Thread-1): Using redshift connection "model.Paddle.my_first_dbt_model".
+2021-07-07 09:57:30.269043 (Thread-1): On model.Paddle.my_first_dbt_model: BEGIN
+2021-07-07 09:57:30.310332 (Thread-1): SQL status: BEGIN in 0.04 seconds
+2021-07-07 09:57:30.310565 (Thread-1): On model.Paddle.my_first_dbt_model: COMMIT
+2021-07-07 09:57:30.310651 (Thread-1): Using redshift connection "model.Paddle.my_first_dbt_model".
+2021-07-07 09:57:30.310722 (Thread-1): On model.Paddle.my_first_dbt_model: COMMIT
+2021-07-07 09:57:30.337404 (Thread-1): SQL status: COMMIT in 0.03 seconds
+2021-07-07 09:57:30.337589 (Thread-1): Using redshift connection "model.Paddle.my_first_dbt_model".
+2021-07-07 09:57:30.337676 (Thread-1): On model.Paddle.my_first_dbt_model: BEGIN
+2021-07-07 09:57:30.358846 (Thread-1): SQL status: BEGIN in 0.02 seconds
+2021-07-07 09:57:30.360675 (Thread-1): Using redshift connection "model.Paddle.my_first_dbt_model".
+2021-07-07 09:57:30.360773 (Thread-1): On model.Paddle.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "paddle", "target_name": "dev", "node_id": "model.Paddle.my_first_dbt_model"} */
+drop table if exists "site_20583"."dbt_dczekalska"."my_first_dbt_model__dbt_backup" cascade
+2021-07-07 09:57:30.382943 (Thread-1): SQL status: DROP TABLE in 0.02 seconds
+2021-07-07 09:57:30.383798 (Thread-1): On model.Paddle.my_first_dbt_model: COMMIT
+2021-07-07 09:57:30.383928 (Thread-1): Using redshift connection "model.Paddle.my_first_dbt_model".
+2021-07-07 09:57:30.384002 (Thread-1): On model.Paddle.my_first_dbt_model: COMMIT
+2021-07-07 09:57:30.425935 (Thread-1): SQL status: COMMIT in 0.04 seconds
+2021-07-07 09:57:30.426129 (Thread-1): Using redshift connection "model.Paddle.my_first_dbt_model".
+2021-07-07 09:57:30.426244 (Thread-1): On model.Paddle.my_first_dbt_model: BEGIN
+2021-07-07 09:57:30.445596 (Thread-1): SQL status: BEGIN in 0.02 seconds
+2021-07-07 09:57:30.462723 (Thread-1): Writing runtime SQL for node "model.Paddle.my_first_dbt_model"
+2021-07-07 09:57:30.463418 (Thread-1): Using redshift connection "model.Paddle.my_first_dbt_model".
+2021-07-07 09:57:30.463519 (Thread-1): On model.Paddle.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "paddle", "target_name": "dev", "node_id": "model.Paddle.my_first_dbt_model"} */
+
+
+  create  table
+    "site_20583"."dbt_dczekalska"."my_first_dbt_model__dbt_tmp"
+    
+    
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+2021-07-07 09:57:31.428622 (Thread-1): SQL status: SELECT in 0.96 seconds
+2021-07-07 09:57:31.434521 (Thread-1): Using redshift connection "model.Paddle.my_first_dbt_model".
+2021-07-07 09:57:31.434638 (Thread-1): On model.Paddle.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "paddle", "target_name": "dev", "node_id": "model.Paddle.my_first_dbt_model"} */
+alter table "site_20583"."dbt_dczekalska"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+2021-07-07 09:57:31.456130 (Thread-1): SQL status: ALTER TABLE in 0.02 seconds
+2021-07-07 09:57:31.463378 (Thread-1): On model.Paddle.my_first_dbt_model: COMMIT
+2021-07-07 09:57:31.463496 (Thread-1): Using redshift connection "model.Paddle.my_first_dbt_model".
+2021-07-07 09:57:31.463568 (Thread-1): On model.Paddle.my_first_dbt_model: COMMIT
+2021-07-07 09:57:31.539855 (Thread-1): SQL status: COMMIT in 0.08 seconds
+2021-07-07 09:57:31.541753 (Thread-1): Using redshift connection "model.Paddle.my_first_dbt_model".
+2021-07-07 09:57:31.541849 (Thread-1): On model.Paddle.my_first_dbt_model: BEGIN
+2021-07-07 09:57:31.562296 (Thread-1): SQL status: BEGIN in 0.02 seconds
+2021-07-07 09:57:31.564235 (Thread-1): Using redshift connection "model.Paddle.my_first_dbt_model".
+2021-07-07 09:57:31.564327 (Thread-1): On model.Paddle.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "paddle", "target_name": "dev", "node_id": "model.Paddle.my_first_dbt_model"} */
+drop table if exists "site_20583"."dbt_dczekalska"."my_first_dbt_model__dbt_backup" cascade
+2021-07-07 09:57:31.584518 (Thread-1): SQL status: DROP TABLE in 0.02 seconds
+2021-07-07 09:57:31.585281 (Thread-1): On model.Paddle.my_first_dbt_model: COMMIT
+2021-07-07 09:57:31.585369 (Thread-1): Using redshift connection "model.Paddle.my_first_dbt_model".
+2021-07-07 09:57:31.585439 (Thread-1): On model.Paddle.my_first_dbt_model: COMMIT
+2021-07-07 09:57:31.607046 (Thread-1): SQL status: COMMIT in 0.02 seconds
+2021-07-07 09:57:31.607181 (Thread-1): Using redshift connection "model.Paddle.my_first_dbt_model".
+2021-07-07 09:57:31.607264 (Thread-1): On model.Paddle.my_first_dbt_model: BEGIN
+2021-07-07 09:57:31.633189 (Thread-1): SQL status: BEGIN in 0.03 seconds
+2021-07-07 09:57:31.634800 (Thread-1): finished collecting timing info
+2021-07-07 09:57:31.635006 (Thread-1): On model.Paddle.my_first_dbt_model: ROLLBACK
+2021-07-07 09:57:31.655937 (Thread-1): On model.Paddle.my_first_dbt_model: Close
+2021-07-07 09:57:31.656731 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ebb1835f-c4ee-48ab-921a-d29a39e4c97a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe008b80c10>]}
+2021-07-07 09:57:31.657640 (Thread-1): 10:57:31 | 1 of 2 OK created table model dbt_dczekalska.my_first_dbt_model...... [SELECT in 1.66s]
+2021-07-07 09:57:31.657778 (Thread-1): Finished running node model.Paddle.my_first_dbt_model
+2021-07-07 09:57:31.658443 (Thread-1): Began running node model.Paddle.my_second_dbt_model
+2021-07-07 09:57:31.660742 (Thread-1): 10:57:31 | 2 of 2 START view model dbt_dczekalska.my_second_dbt_model........... [RUN]
+2021-07-07 09:57:31.661173 (Thread-1): Acquiring new redshift connection "model.Paddle.my_second_dbt_model".
+2021-07-07 09:57:31.661281 (Thread-1): Compiling model.Paddle.my_second_dbt_model
+2021-07-07 09:57:31.668494 (Thread-1): Writing injected SQL for node "model.Paddle.my_second_dbt_model"
+2021-07-07 09:57:31.668907 (Thread-1): finished collecting timing info
+2021-07-07 09:57:31.686640 (Thread-1): Using redshift connection "model.Paddle.my_second_dbt_model".
+2021-07-07 09:57:31.686856 (Thread-1): On model.Paddle.my_second_dbt_model: BEGIN
+2021-07-07 09:57:31.686936 (Thread-1): Opening a new connection, currently in state closed
+2021-07-07 09:57:31.687004 (Thread-1): Connecting to Redshift using 'database' credentials
+2021-07-07 09:57:31.879535 (Thread-1): SQL status: BEGIN in 0.19 seconds
+2021-07-07 09:57:31.881396 (Thread-1): Using redshift connection "model.Paddle.my_second_dbt_model".
+2021-07-07 09:57:31.881489 (Thread-1): On model.Paddle.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "paddle", "target_name": "dev", "node_id": "model.Paddle.my_second_dbt_model"} */
+drop view if exists "site_20583"."dbt_dczekalska"."my_second_dbt_model__dbt_tmp" cascade
+2021-07-07 09:57:31.902828 (Thread-1): SQL status: DROP VIEW in 0.02 seconds
+2021-07-07 09:57:31.903637 (Thread-1): On model.Paddle.my_second_dbt_model: COMMIT
+2021-07-07 09:57:31.903731 (Thread-1): Using redshift connection "model.Paddle.my_second_dbt_model".
+2021-07-07 09:57:31.903822 (Thread-1): On model.Paddle.my_second_dbt_model: COMMIT
+2021-07-07 09:57:31.965308 (Thread-1): SQL status: COMMIT in 0.06 seconds
+2021-07-07 09:57:31.965497 (Thread-1): Using redshift connection "model.Paddle.my_second_dbt_model".
+2021-07-07 09:57:31.965580 (Thread-1): On model.Paddle.my_second_dbt_model: BEGIN
+2021-07-07 09:57:31.989048 (Thread-1): SQL status: BEGIN in 0.02 seconds
+2021-07-07 09:57:31.989235 (Thread-1): On model.Paddle.my_second_dbt_model: COMMIT
+2021-07-07 09:57:31.989322 (Thread-1): Using redshift connection "model.Paddle.my_second_dbt_model".
+2021-07-07 09:57:31.989396 (Thread-1): On model.Paddle.my_second_dbt_model: COMMIT
+2021-07-07 09:57:32.009367 (Thread-1): SQL status: COMMIT in 0.02 seconds
+2021-07-07 09:57:32.009503 (Thread-1): Using redshift connection "model.Paddle.my_second_dbt_model".
+2021-07-07 09:57:32.009586 (Thread-1): On model.Paddle.my_second_dbt_model: BEGIN
+2021-07-07 09:57:32.030890 (Thread-1): SQL status: BEGIN in 0.02 seconds
+2021-07-07 09:57:32.032661 (Thread-1): Using redshift connection "model.Paddle.my_second_dbt_model".
+2021-07-07 09:57:32.032753 (Thread-1): On model.Paddle.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "paddle", "target_name": "dev", "node_id": "model.Paddle.my_second_dbt_model"} */
+drop view if exists "site_20583"."dbt_dczekalska"."my_second_dbt_model__dbt_backup" cascade
+2021-07-07 09:57:32.054350 (Thread-1): SQL status: DROP VIEW in 0.02 seconds
+2021-07-07 09:57:32.055129 (Thread-1): On model.Paddle.my_second_dbt_model: COMMIT
+2021-07-07 09:57:32.055239 (Thread-1): Using redshift connection "model.Paddle.my_second_dbt_model".
+2021-07-07 09:57:32.055309 (Thread-1): On model.Paddle.my_second_dbt_model: COMMIT
+2021-07-07 09:57:32.115013 (Thread-1): SQL status: COMMIT in 0.06 seconds
+2021-07-07 09:57:32.115155 (Thread-1): Using redshift connection "model.Paddle.my_second_dbt_model".
+2021-07-07 09:57:32.115236 (Thread-1): On model.Paddle.my_second_dbt_model: BEGIN
+2021-07-07 09:57:32.134738 (Thread-1): SQL status: BEGIN in 0.02 seconds
+2021-07-07 09:57:32.139352 (Thread-1): Writing runtime SQL for node "model.Paddle.my_second_dbt_model"
+2021-07-07 09:57:32.139843 (Thread-1): Using redshift connection "model.Paddle.my_second_dbt_model".
+2021-07-07 09:57:32.139930 (Thread-1): On model.Paddle.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "paddle", "target_name": "dev", "node_id": "model.Paddle.my_second_dbt_model"} */
+
+
+  create view "site_20583"."dbt_dczekalska"."my_second_dbt_model__dbt_tmp" as (
+    -- Use the `ref` function to select from other models
+
+select *
+from "site_20583"."dbt_dczekalska"."my_first_dbt_model"
+where id = 1
+  ) ;
+
+2021-07-07 09:57:32.168989 (Thread-1): SQL status: CREATE VIEW in 0.03 seconds
+2021-07-07 09:57:32.171612 (Thread-1): Using redshift connection "model.Paddle.my_second_dbt_model".
+2021-07-07 09:57:32.171725 (Thread-1): On model.Paddle.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "paddle", "target_name": "dev", "node_id": "model.Paddle.my_second_dbt_model"} */
+alter table "site_20583"."dbt_dczekalska"."my_second_dbt_model__dbt_tmp" rename to "my_second_dbt_model"
+2021-07-07 09:57:32.193583 (Thread-1): SQL status: ALTER TABLE in 0.02 seconds
+2021-07-07 09:57:32.194776 (Thread-1): On model.Paddle.my_second_dbt_model: COMMIT
+2021-07-07 09:57:32.194874 (Thread-1): Using redshift connection "model.Paddle.my_second_dbt_model".
+2021-07-07 09:57:32.194946 (Thread-1): On model.Paddle.my_second_dbt_model: COMMIT
+2021-07-07 09:57:32.249359 (Thread-1): SQL status: COMMIT in 0.05 seconds
+2021-07-07 09:57:32.249730 (Thread-1): Using redshift connection "model.Paddle.my_second_dbt_model".
+2021-07-07 09:57:32.249833 (Thread-1): On model.Paddle.my_second_dbt_model: BEGIN
+2021-07-07 09:57:32.268423 (Thread-1): SQL status: BEGIN in 0.02 seconds
+2021-07-07 09:57:32.270969 (Thread-1): Using redshift connection "model.Paddle.my_second_dbt_model".
+2021-07-07 09:57:32.271085 (Thread-1): On model.Paddle.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "paddle", "target_name": "dev", "node_id": "model.Paddle.my_second_dbt_model"} */
+drop view if exists "site_20583"."dbt_dczekalska"."my_second_dbt_model__dbt_backup" cascade
+2021-07-07 09:57:32.292565 (Thread-1): SQL status: DROP VIEW in 0.02 seconds
+2021-07-07 09:57:32.293353 (Thread-1): On model.Paddle.my_second_dbt_model: COMMIT
+2021-07-07 09:57:32.293444 (Thread-1): Using redshift connection "model.Paddle.my_second_dbt_model".
+2021-07-07 09:57:32.293516 (Thread-1): On model.Paddle.my_second_dbt_model: COMMIT
+2021-07-07 09:57:32.350521 (Thread-1): SQL status: COMMIT in 0.06 seconds
+2021-07-07 09:57:32.350702 (Thread-1): Using redshift connection "model.Paddle.my_second_dbt_model".
+2021-07-07 09:57:32.350783 (Thread-1): On model.Paddle.my_second_dbt_model: BEGIN
+2021-07-07 09:57:32.369232 (Thread-1): SQL status: BEGIN in 0.02 seconds
+2021-07-07 09:57:32.370873 (Thread-1): finished collecting timing info
+2021-07-07 09:57:32.371091 (Thread-1): On model.Paddle.my_second_dbt_model: ROLLBACK
+2021-07-07 09:57:32.390903 (Thread-1): On model.Paddle.my_second_dbt_model: Close
+2021-07-07 09:57:32.391760 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ebb1835f-c4ee-48ab-921a-d29a39e4c97a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe008b04090>]}
+2021-07-07 09:57:32.392713 (Thread-1): 10:57:32 | 2 of 2 OK created view model dbt_dczekalska.my_second_dbt_model...... [CREATE VIEW in 0.73s]
+2021-07-07 09:57:32.392832 (Thread-1): Finished running node model.Paddle.my_second_dbt_model
+2021-07-07 09:57:32.446891 (MainThread): Acquiring new redshift connection "master".
+2021-07-07 09:57:32.447086 (MainThread): Using redshift connection "master".
+2021-07-07 09:57:32.447163 (MainThread): On master: BEGIN
+2021-07-07 09:57:32.447234 (MainThread): Opening a new connection, currently in state closed
+2021-07-07 09:57:32.447298 (MainThread): Connecting to Redshift using 'database' credentials
+2021-07-07 09:57:32.686117 (MainThread): SQL status: BEGIN in 0.24 seconds
+2021-07-07 09:57:32.686294 (MainThread): On master: COMMIT
+2021-07-07 09:57:32.686374 (MainThread): Using redshift connection "master".
+2021-07-07 09:57:32.686443 (MainThread): On master: COMMIT
+2021-07-07 09:57:32.706033 (MainThread): SQL status: COMMIT in 0.02 seconds
+2021-07-07 09:57:32.706213 (MainThread): On master: Close
+2021-07-07 09:57:32.706756 (MainThread): 10:57:32 | 
+2021-07-07 09:57:32.706871 (MainThread): 10:57:32 | Finished running 1 table model, 1 view model in 4.30s.
+2021-07-07 09:57:32.706989 (MainThread): Connection 'master' was properly closed.
+2021-07-07 09:57:32.707069 (MainThread): Connection 'model.Paddle.my_second_dbt_model' was properly closed.
+2021-07-07 09:57:32.712417 (MainThread): 
+2021-07-07 09:57:32.712545 (MainThread): Completed successfully
+2021-07-07 09:57:32.712689 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+2021-07-07 09:57:32.712883 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdfe921f790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdfe9202390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe008b04950>]}
+2021-07-07 09:57:32.713046 (MainThread): Flushing usage events
